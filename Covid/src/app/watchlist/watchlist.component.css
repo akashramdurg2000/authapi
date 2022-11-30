@@ -1,0 +1,10 @@
+.button{
+    text-align: right;
+    margin-right: 10px;
+}
+
+section{
+  background-image: url('src\assets\covid-19.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  }

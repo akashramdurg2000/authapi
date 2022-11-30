@@ -1,0 +1,31 @@
+
+<section class="vh-100 gradient-custom">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <div class="form__group">
+      <input type="text" class="form__input" #country placeholder="Enter country" />
+      <label for="name" class="form__label"></label>
+      <input type="text" class="form__input" #state placeholder="Enter State"  />
+      <label for="name" class="form__label"></label>
+      <input type="text" class="form__input" #city placeholder="Enter City"  />
+      <label for="name" class="form__label"></label>
+      <button class="bttn" (click)="getcountry(country.value);getstate(state.value);getcity(city.value);getPollutionData()">Search</button>
+    </div>    
+    
+    <div class="container">
+          
+        <div class="background">
+          <div class="Circle1"></div>
+          <div class="Circle2"></div>
+          <div class="Circle3"></div>
+          <div class="content">
+            <h1 class="Condition">AQI</h1>
+            <h1 class="Temp">{{PollutionData.data.current.pollution.aqius}}</h1>
+            <h1 class="Time">PM 2.5</h1>
+            <h1 class="Location"><i class="material-icons locationIcon">place</i>{{PollutionData.data.city}},{{PollutionData.data.country}}</h1>
+          </div>
+        </div>
+      </div>
+
+</section>
+
